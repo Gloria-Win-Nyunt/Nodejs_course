@@ -42,16 +42,22 @@ const fs = require("fs");
 //     console.log('folder deleted');
 // })
 
-if (fs.existsSync("./new")) {
-  fs.rmdir("./new", (err) => {
-    if (err) console.log(err);
-    console.log("removed");
-  });
-} else {
-  fs.mkdir("./new", (err) => {
-    if (err) {
-      console.log(err);
-    }
-    console.log("folder created");
-  });
-}
+// if (fs.existsSync("./new")) {
+//   fs.rmdir("./new", (err) => {
+//     if (err) console.log(err);
+//     console.log("removed");
+//   });
+// } else {
+//   fs.mkdir("./new", (err) => {
+//     if (err) {
+//       console.log(err);
+//     }
+//     console.log("folder created");
+//   });
+// }
+
+
+fs.readFile('./docs/creative123.txt',(err,data)=>{
+    if(err)console.log(err);
+    console.log(data.buffer);
+})
