@@ -5,18 +5,27 @@ const server = http.createServer((req, res) => {
   switch (req.url) {
     case "/": //home.html
       fileName = "index.html";
+      res.statusCode = 200;
       break;
 
     case "/contact":
       fileName = "contact.html";
+      res.statusCode = 200;
       break;
+
+    case "/contact-us":
+        res.statusCode = 301;
+        res.setHeader('Location','/contact')
+        break;
 
     case "/about":
       fileName = "about.html";
+      res.statusCode = 200;
       break;
 
     default:
       fileName = "404.html";
+      res.statusCode = 404;
       break;
   }
   res.setHeader("Content-Type", "text/html");
