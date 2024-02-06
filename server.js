@@ -1,5 +1,8 @@
 const http = require("http");
 const fs = require("fs");
+const _ = require("lodash");
+console.log(_.random(20));
+
 const server = http.createServer((req, res) => {
   let fileName;
   switch (req.url) {
@@ -14,9 +17,9 @@ const server = http.createServer((req, res) => {
       break;
 
     case "/contact-us":
-        res.statusCode = 301;
-        res.setHeader('Location','/contact')
-        break;
+      res.statusCode = 301;
+      res.setHeader("Location", "/contact");
+      break;
 
     case "/about":
       fileName = "about.html";
