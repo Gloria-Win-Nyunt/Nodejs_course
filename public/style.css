@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    background-color: lightblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    text-decoration: none;
+  }
+  nav a {
+    color: white;
+    margin: 0 20px;
+    font-size: 16px;
+  }
+  nav h1 a {
+    font-size: 24px;
+  }
+  nav a:hover {
+    color: green;
+  }
+
+  .container {
+    margin: 20px;
+  }
+
+  .blog-card {
+    margin: 20px 0;
+  }
+
+  .blog-form{
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid lightgreen;
+    padding: 40px;
+  }
+
+  .blog-form h1{
+    color: green;
+  }
+
+  .form-group{
+    margin: 10px 0;
+  }
+
+
+  .form-group input,
+  .form-group textarea{
+    width: 100%;
+    border: 1px solid green;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+
+  .blog-create-btn{
+    font-size: 16px;
+    background: green;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid green;
+    padding: 10px 20px;
+  }
+
+  .blog-delete-btn{
+    margin-top: 10px;
+    font-size:12px;
+    background: red;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid red;
+    padding: 8px 10px;
+  }
+
